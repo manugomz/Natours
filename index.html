@@ -15,6 +15,43 @@
     <title>Natours | Exciting tours for adventurous people</title>
   </head>
   <body>
+    <div class="navigation">
+      <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
+
+      <label for="navi-toggle" class="navigation__button"
+        ><span class="navigation__icon">&nbsp;</span></label
+      >
+
+      <div class="navigation__background">&nbsp;</div>
+
+      <nav class="navigation__nav">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="#about" class="navigation__link"
+              ><span>01</span> About natours</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="#benefits" class="navigation__link"
+              ><span>02</span>Your benefits</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="#tours" class="navigation__link"
+              ><span>03</span>Popular tours</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="#stories" class="navigation__link"
+              ><span>04</span>Stories</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="#book" class="navigation__link"><span>05</span>Book now</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
     <header class="header">
       <div class="header__logo-box">
         <img
@@ -29,13 +66,15 @@
           <span class="heading-primary--main">Outdoors</span>
           <span class="heading-primary--sub">Is where life happens</span>
         </h1>
-        <a href="#" class="btn btn--white btn--animated">Discover our tours</a>
+        <a href="#tours" class="btn btn--white btn--animated"
+          >Discover our tours</a
+        >
       </div>
     </header>
     <main>
       <section class="section-about">
         <div class="u-center-text u-margin-bottom-big">
-          <h2 class="heading-secondary">
+          <h2 class="heading-secondary" id="about">
             Exciting tours for adventurous people
           </h2>
         </div>
@@ -79,7 +118,7 @@
           </div>
         </div>
       </section>
-      <section class="section-features">
+      <section class="section-features" id="benefits">
         <div class="row">
           <div class="col-1-of-4">
             <div class="feature-box">
@@ -136,7 +175,7 @@
         </div>
       </section>
       <section class="section-tours">
-        <div class="u-center-text u-margin-bottom-big">
+        <div class="u-center-text u-margin-bottom-big" id="tours">
           <h2 class="heading-secondary">Most popular tours</h2>
         </div>
         <div class="row">
@@ -167,7 +206,7 @@
                     <p class="card__price-only">Only</p>
                     <p class="card__price-value">$297</p>
                   </div>
-                  <a href="#" class="btn btn--white">Book now!</a>
+                  <a href="#popup" class="btn btn--white">Book now!</a>
                 </div>
               </div>
             </div>
@@ -201,7 +240,7 @@
                     <p class="card__price-only">Only</p>
                     <p class="card__price-value">$459</p>
                   </div>
-                  <a href="#" class="btn btn--white">Book now!</a>
+                  <a href="#popup" class="btn btn--white">Book now!</a>
                 </div>
               </div>
             </div>
@@ -235,7 +274,7 @@
                     <p class="card__price-only">Only</p>
                     <p class="card__price-value">$879</p>
                   </div>
-                  <a href="#" class="btn btn--white">Book now!</a>
+                  <a href="#popup" class="btn btn--white">Book now!</a>
                 </div>
               </div>
             </div>
@@ -254,7 +293,9 @@
           </video>
         </div>
         <div class="u-center-text u-margin-bottom-big">
-          <h2 class="heading-secondary">We make people genuinely happy</h2>
+          <h2 class="heading-secondary" id="stories">
+            We make people genuinely happy
+          </h2>
         </div>
         <div class="row">
           <div class="story">
@@ -311,7 +352,7 @@
           </div>
         </div>
       </section>
-      <section class="section-booking">
+      <section class="section-booking" id="book">
         <div class="row">
           <div class="book">
             <div class="book__form">
@@ -375,6 +416,34 @@
           </div>
         </div>
       </section>
+      <div class="pop-up" id="popup">
+        <div class="pop-up__content">
+          <div class="pop-up__left">
+            <img src="img/nat-8.jpg" alt="tour photo" class="pop-up__img" />
+            <img src="img/nat-9.jpg" alt="tour photo" class="pop-up__img" />
+          </div>
+          <div class="pop-up__right">
+            <a href="#tours" class="pop-up__close"> &times;</a>
+            <h2 class="heading-secondary u-margin-bottom-small">
+              Start booking now
+            </h2>
+            <h3 class="heading-tertiary u-margin-bottom-small">
+              Important &ndash; Please read these terms before booking
+            </h3>
+            <p class="pop-up__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatum dolorem molestias maxime? Cumque voluptates
+              necessitatibus blanditiis aperiam beatae debitis dignissimos quam.
+              Natus ut, est perferendis repellat deleniti saepe quis libero!
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt
+              iusto soluta omnis vel hic ex cupiditate! Error molestiae
+              doloremque, debitis distinctio magni earum animi vitae, repellat
+              sit.
+            </p>
+            <a href="#book" class="btn btn--green">Book now</a>
+          </div>
+        </div>
+      </div>
     </main>
     <footer class="footer">
       <div class="footer__logo-box">
