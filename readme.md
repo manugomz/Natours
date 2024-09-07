@@ -6,7 +6,7 @@ This project is a part of [Jonas Schmedtmann](https://www.github.com/jonasschmed
 
 ## Demo
 
-[natours-gmz.vercel.app](natours-gmz.vercel.app)
+[natours-gmz.vercel.app](https://www.natours-gmz.vercel.app)
 
 
 Developed by [Manuela Gómez E](https://www.github.com/manugomz)
