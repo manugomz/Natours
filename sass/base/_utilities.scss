@@ -12,10 +12,14 @@
 
 .u-margin-bottom-big {
   margin-bottom: 6rem;
+
+  @include respond(tab-port) {
+    margin-bottom: 3rem;
+  }
 }
 
-.u-margin-y-medium{
-  margin:4rem 0;
+.u-margin-y-medium {
+  margin: 4rem 0;
 }
 
 .u-margin-top-big {

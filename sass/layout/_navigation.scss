@@ -17,6 +17,11 @@
     cursor: pointer;
     transition: transform 0.2s;
 
+    @include respond(tab-port){
+      top: 2rem;
+      right: 2rem;
+    }
+
     &:hover{
       transform: scale(1.05);
     }
@@ -36,6 +41,11 @@
     z-index: 10;
 
     transition: transform 0.8s;
+
+    @include respond(tab-port){
+      top: 2rem;
+      right: 2rem;
+    }
   }
 
   &__nav {

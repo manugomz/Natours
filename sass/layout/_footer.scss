@@ -3,9 +3,18 @@
   padding: 10rem 0;
   font-size: 1.4rem;
 
+  @include respond(tab-port) {
+    padding: 8rem 0;
+    font-size: 1.3rem;
+  }
+
   &__logo-box {
     text-align: center;
     margin-bottom: 8rem;
+
+    @include respond(tab-port) {
+      margin-bottom: 5rem;
+    }
   }
 
   &__logo {
@@ -16,7 +25,13 @@
     border-top: 1px solid $color-gray-dark-1;
     padding-top: 2rem;
     display: inline-block;
+
+    @include respond(tab-port){
+      width: 100%;
+      text-align: center;
+    }
   }
+
   &__list {
     list-style: none;
   }
@@ -27,28 +42,25 @@
     &:not(:last-child) {
       margin-right: 1.5rem;
     }
-
   }
   &__link {
-
     &:link,
     &:visited {
       color: $color-gray-light-1;
       text-decoration: none;
       text-transform: uppercase;
       display: inline-block;
-      padding: 0 .4rem;
-      transition: all .2s;
+      padding: 0 0.4rem;
+      transition: all 0.2s;
     }
 
     &:hover,
     &:active {
       color: $color-primary;
-      box-shadow: 0 .4rem .5rem rgba($color-black, $alpha: 0.4);
-      padding: 0 .4rem;
-      transform: translateY(-.5rem) scale(1.05);
+      box-shadow: 0 0.4rem 0.5rem rgba($color-black, $alpha: 0.4);
+      padding: 0 0.4rem;
+      transform: translateY(-0.5rem) scale(1.05);
     }
-
   }
 
   &__copyright {
@@ -57,5 +69,10 @@
     padding-top: 2rem;
     width: 90%;
     float: right;
+
+    @include respond(tab-port){
+      width: 100%;
+      float: none;
+    }
   }
 }
