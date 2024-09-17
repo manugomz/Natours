@@ -172,7 +172,8 @@
   // --------------------R E S P O N S I V E ------------------------------
   // ----------------------------------------------------------------------
 
-  @include respond(tab-port) {
+  //@include respond(tab-port) {
+  @media only screen and (max-width: 56.25em), only screen and (hover: none) {
     height: auto;
     border-radius: 3px;
     background-color: $color-white;
@@ -185,8 +186,8 @@
 
       &--back {
         transform: rotateY(0deg);
-        clip-path: polygon(0 15%, 100% 0, 100% 100%,  0 100%);
-        border-radius:0% 0% 3px 3px;
+        clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+        border-radius: 0% 0% 3px 3px;
       }
     }
 
